@@ -1,0 +1,22 @@
+extend ../masterlayout/masterpage
+block body
+	ul#menu
+		li(data-menuanchor="home",class="active")
+			a(href="#home") Home
+		li(data-menuanchor="about")
+			a(href="#about") About
+		li(data-menuanchor="signin")
+			a(href="#signin") Sign In
+		li(data-menuanchor="contact")
+			a(href="#contact") Contact
+	#pagepiling
+		.section#section1
+			include ../components/home/index
+		.section#section2
+			include ../components/info/index
+		.section#section3
+			include ../components/signin/index
+		.section#section4
+			include ../components/contact/index
+	include ../components/footer/index
+	

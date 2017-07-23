@@ -1,0 +1,101 @@
+$lato: 'Lato',
+sans-serif;
+$mari: 'Merriweather',
+serif;
+
+
+
+.info {
+
+    @media (min-width: 1400px) {
+        padding: 0 5%;
+    }
+    .info__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+    }
+
+    .info__graphic img {
+        width: 140%;
+        margin-left: 15%;
+        opacity: 0;
+        transform: translateX(-50px);
+
+        @media (max-width: 1024px) {
+            opacity: 1;
+            margin-left: 0%;
+        }
+        @media (max-width: 991px) {
+            width: 100%;
+            margin: 0 auto;
+            transform: translateX(0px);
+        }
+    }
+
+    .info__content {
+        transform: translateX(20px);
+        font-family: $lato;
+        width: 50%;
+        float: right;
+        margin-right: 10%;
+        @media (max-width: 991px) {
+            width: 100%;
+            margin: 0;
+            float: none;
+            transform: translateX(0);
+        }
+        p:nth-of-type(1) {
+            font-size: 3em;
+            padding-right: 40px;
+            line-height: 50px;
+            margin-bottom: 25px;
+            @media (max-width: 1024px) {
+                padding-right: 0px;
+            }
+            @media (max-width: 991px) {
+                font-size: 2.2em;
+                line-height: 33px;
+                margin-top: 30px;
+            }
+        }
+        p:nth-of-type(2) {
+            font-family: $mari;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            @media (max-width: 991px) {
+                font-size: 1.2em;
+            }
+        }
+        p:nth-of-type(3) {
+            font-size: 1.3em;
+            font-family: $mari;
+            @media (max-width: 991px) {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+
+    &::after {
+        content: "";
+        background: url('../assets/icon_sprite.png') repeat top center;
+        background-size: 30%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 85%;
+        height: 90px;
+        opacity: 1;
+        transform: rotate(90deg);
+        z-index: -1;
+        display: block;
+        @media (max-width: 991px) {
+            display: none
+        }
+    }
+}
