@@ -12,8 +12,8 @@ $(document).ready(function() {
                 if (index === 1) {
                     console.log("1")
                 } else if (index === 2) {
-                    TweenMax.to('.info__graphic img', .4, { opacity: 1, x: 0, ease: Back.easeOut });
-                    TweenMax.to('.info__content', .8, { x: 0, ease: Back.easeOut });
+                    // TweenMax.to('.info__graphic img', .4, { opacity: 1, x: 0, ease: Back.easeOut });
+                    // TweenMax.to('.info__content', .8, { x: 0, ease: Back.easeOut });
                 } else if (index === 3) {
                     $("#signinvideo")[0].play();
                 } else if (index === 4) {
