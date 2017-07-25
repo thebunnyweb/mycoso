@@ -8,7 +8,6 @@
 
 
 /* latin-ext */
-
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -18,10 +17,7 @@
 }
 
 
-
-
 /* latin */
-
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -34,7 +30,6 @@
 
 
 /* latin-ext */
-
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -249,7 +244,8 @@ body {
 
 
 
-
+#section2.active .info__graphic img ,
+#section2.active .info__content, 
 #section3.active .signin a,
 #section4.active .contact::after {
     transform: translateX(0);
@@ -261,11 +257,11 @@ body {
 
 
 div#pp-nav ul li a span {
-    border: 1px solid #e67e22 !important;
+    border: 1px solid #000 !important;
 }
 
 div#pp-nav ul li a.active span {
-    background: #e67e22
+    background: #000
 }
 
 

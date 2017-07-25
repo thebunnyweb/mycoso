@@ -1,0 +1,44 @@
+.writerform {
+    .modal-dialog {
+        max-width: 75%;
+        width: 100%;
+    }
+    label {
+        color: #999;
+        font-size: 1em;
+        font-weight: 100;
+        padding: 0px;
+        transition: all .3s ease;
+        position: absolute;
+        top: 8px;
+        left:5px;
+    }
+    label.active {
+        top: -17px;
+        color: #2196F3;
+    }
+    .control-group {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        position: relative;
+    }
+
+    .section1,
+    .section2 {
+        width: 49%;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input,select {
+        max-width: 90%;
+        transition: all .4s ease;
+    }
+
+    select{
+    	margin-bottom:20px;
+    }
+}

@@ -20,9 +20,10 @@ serif;
     }
 
     .info__graphic img {
+        transition: all .4s ease;
+          transition-delay: .5s;
         width: 140%;
         margin-left: 15%;
-        opacity: 0;
         transform: translateX(-50px);
 
         @media (max-width: 1024px) {
@@ -37,6 +38,8 @@ serif;
     }
 
     .info__content {
+        transition: all .4s ease;
+          transition-delay: .5s;
         transform: translateX(20px);
         font-family: $lato;
         width: 50%;
