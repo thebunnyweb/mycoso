@@ -1,6 +1,6 @@
 .writerform {
     .modal-dialog {
-        max-width: 75%;
+        max-width: 45%;
         width: 100%;
     }
     label {
@@ -11,7 +11,7 @@
         transition: all .3s ease;
         position: absolute;
         top: 8px;
-        left:5px;
+        left: 5px;
     }
     label.active {
         top: -17px;
@@ -25,20 +25,61 @@
 
     .section1,
     .section2 {
-        width: 49%;
+        width: 100%;
     }
 
     form {
         display: flex;
         justify-content: space-between;
+        flex-direction:column;
     }
 
-    input,select {
-        max-width: 90%;
+    input,
+    select {
+        max-width: 100%;
         transition: all .4s ease;
     }
 
-    select{
-    	margin-bottom:20px;
+    select {
+        margin-bottom: 20px;
+    }
+
+    .modal-header {
+        background: #3F51B5;
+        color: #fff;
+    }
+    hr{
+        margin:0;
+    }
+    p{
+        color:#999;
+    }
+
+    .levels{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10%;
+        margin-bottom: 20px;
+        align-items:center;
+        .level1,.level2,.level3{
+            width:31%;
+        }
+        span{
+            font-size: 1em;
+            color:#999;
+            font-weight: 700;
+            padding-bottom: 0;
+            display: inline-block;
+            box-sizing: border-box;
+            margin-top:-5px;
+        }
+    }
+
+
+    .modal-footer{
+        background: #3F51B5;
+        .btn{
+            border-radius: 0px;
+        }
     }
 }
