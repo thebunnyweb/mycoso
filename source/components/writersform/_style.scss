@@ -2,6 +2,11 @@
     .modal-dialog {
         max-width: 45%;
         width: 100%;
+        @media (max-width: 992px) {
+            max-width:95%;
+            width: 100%;
+            margin:0 auto;
+        }
     }
     label {
         color: #999;
@@ -31,7 +36,7 @@
     form {
         display: flex;
         justify-content: space-between;
-        flex-direction:column;
+        flex-direction: column;
     }
 
     input,
@@ -48,38 +53,57 @@
         background: #3F51B5;
         color: #fff;
     }
-    hr{
-        margin:0;
+    hr {
+        margin: 0;
     }
-    p{
-        color:#999;
+    p {
+        color: #999;
     }
 
-    .levels{
+    .levels {
         display: flex;
         justify-content: space-between;
         padding: 0px 10%;
         margin-bottom: 20px;
-        align-items:center;
-        .level1,.level2,.level3{
-            width:31%;
+        align-items: center;
+        @media (max-width: 992px) {
+                padding:0px 3%;
+            }
+        >div {
+            @media (max-width: 992px) {
+                padding:10px;
+            }
         }
-        span{
+        @media (max-width:992px) {
+            flex-direction: column;
+        }
+        .level1,
+        .level2,
+        .level3 {
+            width: 31%;
+            @media (max-width: 992px) {
+                width:100%
+            }
+        }
+        span {
             font-size: 1em;
-            color:#999;
+            color: #999;
             font-weight: 700;
             padding-bottom: 0;
             display: inline-block;
             box-sizing: border-box;
-            margin-top:-5px;
+            margin-top: -5px;
         }
     }
 
 
-    .modal-footer{
+    .modal-footer {
         background: #3F51B5;
-        .btn{
+        .btn {
             border-radius: 0px;
         }
+    }
+    .close{
+        color:#fff;
     }
 }

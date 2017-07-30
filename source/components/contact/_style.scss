@@ -3,6 +3,10 @@
         color: #333;
         font-size: 3em;
         width: 40%;
+        @media (max-width:992px){
+                width:100%;
+                font-size:1.5em;
+        }
     }
 
     input[type='email'] {
@@ -17,6 +21,12 @@
         font-size: 3em;
         margin-bottom: 20px;
         color: #e67e22;
+        @media (max-width:992px){
+                width:100%;
+                font:{
+                    size:1.5em
+                };
+        }
         &:invalid {
             border-bottom: 1px solid red;
         }
