@@ -1,0 +1,109 @@
+.contentform {
+    .modal-dialog {
+        max-width: 45%;
+        width: 100%;
+        @media (max-width: 992px) {
+            max-width:95%;
+            width: 100%;
+            margin:0 auto;
+        }
+    }
+    label {
+        color: #999;
+        font-size: 1em;
+        font-weight: 100;
+        padding: 0px;
+        transition: all .3s ease;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+    }
+    label.active {
+        top: -17px;
+        color: #2196F3;
+    }
+    .control-group {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        position: relative;
+    }
+
+    .section1,
+    .section2 {
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    input,
+    select {
+        max-width: 100%;
+        transition: all .4s ease;
+    }
+
+    select {
+        margin-bottom: 20px;
+    }
+
+    .modal-header {
+        background: #3F51B5;
+        color: #fff;
+    }
+    hr {
+        margin: 0;
+    }
+    p {
+        color: #999;
+    }
+
+    .levels {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10%;
+        margin-bottom: 20px;
+        align-items: center;
+        @media (max-width: 992px) {
+                padding:0px 3%;
+            }
+        >div {
+            @media (max-width: 992px) {
+                padding:10px;
+            }
+        }
+        @media (max-width:992px) {
+            flex-direction: column;
+        }
+        .level1,
+        .level2,
+        .level3 {
+            width: 31%;
+            @media (max-width: 992px) {
+                width:100%
+            }
+        }
+        span {
+            font-size: 1em;
+            color: #999;
+            font-weight: 700;
+            padding-bottom: 0;
+            display: inline-block;
+            box-sizing: border-box;
+            margin-top: -5px;
+        }
+    }
+
+
+    .modal-footer {
+        background: #3F51B5;
+        .btn {
+            border-radius: 0px;
+        }
+    }
+    .close{
+        color:#fff;
+    }
+}

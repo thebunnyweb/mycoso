@@ -26,6 +26,15 @@ $(document).ready(function() {
         });
     }else{
         $("#signinvideo")[0].play();
+        var navigateArr = ["#section1", "#section2", "#section3", "#section4"];
+        $("ul#menu > li").each(function(i){ 
+            $(this).find("a").attr("href",navigateArr[i]);  
+        });
+
+        $("ul#menu > li").click(function(){
+            $("ul#menu > li").removeClass("active");
+            $(this).addClass("active");
+        })
     }
 
 
@@ -44,4 +53,8 @@ infoSection();
 
 var writerForm = require('../components/writersform/writerform.js');
 writerForm();
+
+
+var contentform = require('../components/contentform/contentform.js');
+contentform();
 

@@ -1,0 +1,108 @@
+.contentform
+	#contentModal.modal.fade(role="dialog")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(data-dismiss="modal") &times;
+					.modal-title 
+						p Greetings 
+						| Let's get you started
+				.modal-body
+					form.form(action="#")
+						.section1
+							.control-group
+								label(for="name", class="label") Name
+								input(type="text",class="form-control", required)
+							.control-group
+								label(for="email", class="label") Email
+								input(type="text",class="form-control", required)
+							.control-group
+								label(for="penname", class="label") Pen Name
+								input(type="text",class="form-control", required)
+							.control-group
+								select.form-control
+									option(value="0") Experience
+									option(value="0-1") 0 - 1 Years
+									option(value="0-1") 1 - 3 Years
+									option(value="0-1") 3 - 5 Years
+									option(value="0-1") 5 - 7 Years
+									option(value="0-1") 7 - 10 Years
+									option(value="0-1") 10+ Years
+							.control-group
+								label(for="blog", class="label") Blog/Website Link
+								input(type="text",class="form-control")
+						hr
+						.section2
+							.control-group
+								p Area of Expertise
+								.levels
+									.level1
+										input(type="checkbox" value="")
+										span &nbsp;Technology 
+									.level2
+										input(type="checkbox" value="")
+										span &nbsp;Food
+									.level3
+										input(type="checkbox" value="")
+										span &nbsp;Fashion
+								.levels
+									.level1
+										input(type="checkbox" value="")
+										span &nbsp;Healthcare 
+									.level2
+										input(type="checkbox" value="")
+										span &nbsp;Lifestyle
+									.level3
+										input(type="checkbox" value="")
+										span &nbsp;Manufacturing
+								.levels
+									.level1
+										input(type="checkbox" value="")
+										span &nbsp;IT 
+									.level2
+										input(type="checkbox" value="")
+										span &nbsp;Productivity
+									.level3
+										input(type="checkbox" value="")
+										span &nbsp;Marketing
+								.levels
+									.level1
+										input(type="checkbox" value="")
+										span &nbsp;Sociology 
+									.level2
+										input(type="checkbox" value="")
+										span &nbsp;Economics
+									.level3
+										input(type="checkbox" value="")
+										span &nbsp;Startups
+								.levels
+									.level1
+										input(type="checkbox" value="")
+										span &nbsp;Website content 
+							.control-group
+								p Writing Style
+								.levels
+									.level1
+										input(type="checkbox" value="")
+										span &nbsp;Humour 
+									.level2
+										input(type="checkbox" value="")
+										span &nbsp;Informative
+									.level3
+										input(type="checkbox" value="")
+										span &nbsp;List
+								.levels
+									.level1
+										input(type="checkbox" value="")
+										span &nbsp;Inspiring 
+							hr
+							br
+							p Sample of work
+							.control-group
+								label(for="link") Link
+								input(type="text",class="form-control")
+							.control-group
+								p Upload File
+								input(type="file",class="form-control")
+				.modal-footer
+					button(class="btn btn-danger" , data-dismiss="modal") Submit Info
